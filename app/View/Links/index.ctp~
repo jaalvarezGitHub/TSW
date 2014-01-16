@@ -1,0 +1,87 @@
+
+<div id="front">
+<div id="buscador">
+<p id="logo">Url</p>
+<input type="text" id="text_buscador"> </input>
+<ul>
+	<li><a href="">Guardar</a></li>
+	<li><a href="">Recortar</a></li>
+	<li><a href="">Buscar</a></li>					
+</ul> 
+</div>
+<div id="div_izq">
+<div id="encabezado_div">
+	<div id="titulo_div">Mis URL's</div>
+</div>
+<div id="contenido_paneles"> 
+	<div class="scroll scroll_superior"></div>
+	<div id="div_lista_url">
+		<ul id="lista">
+		<?php
+			foreach($urls as $url){
+					echo '<li><span class="url_div_izq">'.$url ['Url']['url'].'</span></li>'; 		
+				
+			}
+		?>	
+		
+		</ul>   
+	</div>
+	<div class="scroll scroll_inferior"></div>
+		<ul id="lista_opciones_div">
+			<li id="li_num_paginas">
+				<select>
+				  <option value="">5</option>
+				  <option value="">15</option>
+				  <option value="">20</option>
+				  <option value="">todas</option>
+				</select>
+			</li>
+			<li id="li_desplazar">
+				<img src="/img/web/primera_pagina.png"></img>
+				<img src="/img/web/pagina_anterior.png"></img>
+				 pagina 1 de 15
+				<img src="/img/web/pagina_siguiente.png"></img>
+				<img src="/img/web/ultima_pagina.png"></img>
+			</li>
+			<li id="li_num_items">3 items<li>
+		</ul>
+</div>
+</div>
+<div id="div_der"> 
+<div id="titulo_div">Mini URL's</div>
+<div id="contenido_paneles"> 
+	<div class="scroll scroll_superior"></div>
+	<span id="icono_visitas">visitas</span>
+	<div id="div_lista_url">
+		<ul id="lista">
+		<?php
+			foreach($links as $link){
+					echo '<li><span class="url_div_izq">'.$link ['L']['urlMini'].'</span> <span class="visitas_div_izq">'.$link ['0']['cont'].'</span></li>'; 		
+				
+			}
+		?>	
+		</ul>  
+	</div>
+	<div class="scroll scroll_inferior"></div>
+	<ul id="lista_opciones_div">
+			<li id="li_num_paginas">
+				<select>
+				  <option value="">5</option>
+				  <option value="">15</option>
+				  <option value="">20</option>
+				  <option value="">todas</option>
+				</select>
+			</li>
+			<li id="li_desplazar">
+				<img src="/img/web/primera_pagina.png"></img>
+				<img src="/img/web/pagina_anterior.png"></img>
+				 pagina 1 de 15
+				<img src="/img/web/pagina_siguiente.png"></img>
+				<img src="/img/web/ultima_pagina.png"></img>
+			</li>
+			<li id="li_num_items">3 items</li>
+	</ul>
+</div>
+</div>
+<div id="icono_papelera"> <img src="/img/web/papelera.jpg"></img></div>
+</div>

@@ -1,0 +1,16 @@
+<?php
+class LinksController extends AppController{
+	public $helpers= array('Html','Form');
+	public $uses = array('Link','Url');
+
+	function index(){
+		$this->layout='default2';	
+		$this->set("links",$this->Link->query('SELECT L.urlMini,count(L.urlMini) AS cont
+											   FROM links L,visitas
+											   GROUP BY L.urlMini									
+											'));
+		
+	}
+
+}
+?>

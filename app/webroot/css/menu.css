@@ -1,0 +1,109 @@
+@CHARSET "UTF-8";
+
+#menu_der{
+	display: none;
+	width: 125px;
+	padding: 1px;
+	list-style: none;
+    list-style-type: none;
+	position: absolute;
+}
+#menu_der ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #6d6d6d;
+	background: #fff;
+	border: 1px solid #171717;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style: none;
+	list-style-type: none;
+}
+#menu_der ul li{
+	line-height: 1.5em;
+	padding: 5px 5px 5px 25px;
+	font-size: 11px;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-left: 5px;
+}
+#menu_der ul li:hover{
+	background-color: #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #000;
+	cursor: pointer;
+}
+
+#menu_der ul li{
+	background-position: 3px 6px;
+	background-repeat: no-repeat;
+}
+#menu_der ul li#eliminar{
+	background-image: url(/img/x_roja.png);
+}
+
+
+
+#menu{
+	display: none;
+	width: 125px;
+	padding: 1px;
+	list-style: none;
+    list-style-type: none;
+	position: absolute;
+}
+#menu ul{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color: #6d6d6d;
+	background: #fff;
+	border: 1px solid #171717;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-left: 0px;
+	padding-left: 0px;
+	list-style: none;
+	list-style-type: none;
+}
+#menu ul li{
+	line-height: 1.5em;
+	padding: 5px 5px 5px 25px;
+	font-size: 11px;
+	border-bottom: 1px solid #fff;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	margin-left: 5px;
+}
+#menu ul li:hover{
+	background-color: #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #000;
+	cursor: pointer;
+}
+
+#menu ul li{
+	background-position: 3px 6px;
+	background-repeat: no-repeat;
+}
+#menu ul li#eliminar{
+	background-image: url(/img/x_roja.png);
+}
+#menu ul li#modoSeguro{
+	background-image: url(/img/ticVerde.png);
+}
+
+
+
+
+
+
+
