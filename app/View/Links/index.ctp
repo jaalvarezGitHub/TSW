@@ -35,7 +35,7 @@
 	</div>
 	<div id="contenido_paneles"> 
 		<div class="scroll scroll_superior" id ="scroll_superior_izq" ></div>
-		<div class="div_lista_url" id="div_lista_url_izq">
+#		<div class="div_lista_url" id="div_lista_url_izq">
 			<ul id="ul_links_izq">
 			
 				<div id="menu">
@@ -86,6 +86,7 @@
 				<div id="menu_der">
 					<ul>
 						 <li id="eliminar" class="menu">Eliminar</li>
+						 <li id="estadisticas_btn">Estadísticas</li>
 						 <HR width=90% align="center" pading="0px">
 					</ul>
 				</div>

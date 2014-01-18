@@ -8,14 +8,14 @@ class LinksController extends AppController{
 		$this->layout='default2';;
 		$this->set('links', $this->Link->query('SELECT L.id, L.url, count(L.id) AS cont
 			FROM links L LEFT JOIN visitas V  ON L.id = V.urlMini
-			WHERE usuario ="'.$this->Auth->user('id_usuario').'"
+			WHERE usuario ="'.$this->Auth->user('id').'"
 	    GROUP BY L.id'
 			)
 		);
 		$this->set("numMiniUrls",$this->Link->find('count'));
 		$this->set("urls",$this->Url->find('all', array(
 			'conditions' => array(
-				'Url.usuario' => $this->Auth->user('id_usuario'),
+				'Url.usuario' => $this->Auth->user('id'),
 				'NOT'=> array('Url.usuario' => null)	 
 			),				
 			'limit' => '10',
