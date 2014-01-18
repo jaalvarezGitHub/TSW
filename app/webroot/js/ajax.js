@@ -103,9 +103,9 @@ function muestraContenidoMini() {
 }
 
 
-function showEst(){ console.log("aqui");
+function showEst(){ 
 
-	var request = JSON.parse(this.req.responseText); 	console.log(request);
+	var request = JSON.parse(this.req.responseText); 	
 	var divEst = document.getElementById("estadisticas_tiempo");
 
 	var canvas = document.createElement("canvas");
@@ -119,7 +119,7 @@ function showEst(){ console.log("aqui");
 
 	for(var i in request.mes){
 			a[i]=request.mes[i][0].semana;
-			visitas[i]= request.mes[i][0].num_visitas; console.log(visitas);
+			visitas[i]= request.mes[i][0].num_visitas; 
 
 	}
 	var data = {
@@ -148,7 +148,7 @@ function showEst(){ console.log("aqui");
 
 	for(var i in request.ano){
 			a[i]=request.ano[i][0].mes;
-			visitas[i]= request.ano[i][0].num_visitas; console.log(visitas);
+			visitas[i]= request.ano[i][0].num_visitas; 
 
 	}
 	data = {
@@ -175,13 +175,11 @@ function showEst(){ console.log("aqui");
 	a = new Array();
 	b = new Array();
 	visitas = new Array();
+	var cont = 0;
 
-	for(var i in request.web){ 
-			b['value'] = request.web[i][0].num_visitas;
-			b['color'] = 0;
-			a[i] = b;
-}
-
+	for(var i in request.web){  
+			a.push({value: parseInt(request.web[i][0].num_visitas), color : get_random_color()});
+	}
 	ctx = document.getElementById("canvas_web").getContext("2d");
 	myNewChart = new Chart(ctx).Doughnut(a);
 
@@ -194,13 +192,9 @@ function showEst(){ console.log("aqui");
 	canvas.setAttribute("height","200");
 	divWnp.appendChild(canvas); 
 	a = new Array();
-	b = new Array();
-	visitas = new Array();
 
 	for(var i in request.pais){ 
-			b['value'] = request.pais[i][0].num_visitas;
-			b['color'] = 0;
-			a[i] = b;
+		a.push({value: parseInt(request.pais[i][0].num_visitas), color : get_random_color()});
 	}
 
 	ctx = document.getElementById("canvas_pais").getContext("2d");
@@ -215,14 +209,9 @@ function showEst(){ console.log("aqui");
 	canvas.setAttribute("height","200");
 	divWnp.appendChild(canvas); 
 	a = new Array();
-	b = new Array();
-	visitas = new Array();
 
 	for(var i in request.navegador){ 
-			b['value'] = request.navegador[i][0].num_visitas;
-			console.log(request.navegador[i][0].num_visitas);
-			b['color'] = 0;
-			a[i] = b;
+		a.push({ value: parseInt(request.navegador[i][0].num_visitas), color : get_random_color(),label : 'eessoo'});
 	}
 
 	ctx = document.getElementById("canvas_navegador").getContext("2d");
@@ -246,5 +235,12 @@ function cargarEstadisticas(id){
 	var cargador = new net.CargadorContenidos('http://www.corto.es/Visitas/estadisticas/1',showEst); 
 }
 
-
+function get_random_color() {
+    var simbolos_hex = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += simbolos_hex[Math.round(Math.random() * 15)];
+    }
+    return color;
+}
 

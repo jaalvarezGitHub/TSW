@@ -123,6 +123,13 @@ margin-right:0;
 	margin:0 auto;
 	overflow:hidden;
 }
+#estadisticas_wnp{
+	position:relative;
+	width:800px;
+	margin:0 auto;
+	margin-top:80px;
+}
+
 #barra_seleccion_vista{
 		list-style: none;
 		float:left;
