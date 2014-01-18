@@ -41,13 +41,18 @@ $(document).ready(function(){
   
             //controlamos los botones del menú
             $("#menu_der").click(function(e){
-                 
-            					window.location.replace("/links/eliminar/"+resultado);
-
-                   
+									switch(e.target.id){            					  
+											  case "eliminar":
+															window.location.replace("/links/eliminar/"+resultado);
+															break;
+												case "estadisticas_btn":
+															mostar_estadisticas(resultado);
+                              break;
+									}
+     
             });
 
-												$("#menu").click(function(e){
+						$("#menu").click(function(e){
                    
                   // El switch utiliza los IDs de los <li> del menú
                   switch(e.target.id){
@@ -57,6 +62,7 @@ $(document).ready(function(){
                         case "modoSeguro":
                               window.location.replace("/links/recortar/"+resultado)
                               break;
+
                   }
                    
             });

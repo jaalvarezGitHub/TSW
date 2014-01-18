@@ -156,6 +156,20 @@ function enviarFormulario(ruta){
 		document.getElementById("LinksAddForm").action = ruta; 
 		document.getElementById("LinksAddForm").submit();
 } 
+
+/*Funcion encargada de mostrar las estadisticas*/
+var mostar_estadisticas = function (id_link){ 
+		cargarEstadisticas(id_link);
+		document.getElementById('front').style.display='none';
+		document.getElementById('front_estadisticas').style.display='block';
+		document.getElementById('vista_dia').style.backgroundColor='#CD5C5C';
+		document.getElementById('vista_dia').style.color='#FFF'; 
+		document.getElementById('vista_mes').style.backgroundColor='#fff';
+		document.getElementById('vista_mes').style.color='#aaa';
+		document.getElementById('vista_ano').style.backgroundColor='#fff';
+		document.getElementById('vista_ano').style.color='#aaa';
+
+}
 //Durante la carga de la pagina asignamos las funciones que manejaran los eventos utilizados
 window.onload = function() {
 	//Efecto oscurecer al pasar por encima de los elementos de la cabecera
@@ -169,19 +183,7 @@ window.onload = function() {
 //           						 }
 //	}
 	
-	/*Funcion encargada de mostrar las estadisticas*/
-	document.getElementById("navPag").onmousedown = function (){ 
-			cargarEstadisticas(1);
-			document.getElementById('front').style.display='none';
-			document.getElementById('front_estadisticas').style.display='block';
-			document.getElementById('vista_dia').style.backgroundColor='#CD5C5C';
-			document.getElementById('vista_dia').style.color='#FFF'; 
-			document.getElementById('vista_mes').style.backgroundColor='#fff';
-			document.getElementById('vista_mes').style.color='#aaa';
-			document.getElementById('vista_ano').style.backgroundColor='#fff';
-			document.getElementById('vista_ano').style.color='#aaa';
 
-	}
 	document.getElementById("vista_dia").onmousedown = function (){ 
 			document.getElementById('front_estadisticas').style.display='block';
 			document.getElementById('vista_dia').style.backgroundColor='#CD5C5C';

@@ -263,7 +263,7 @@ function cargaContenidosUrls(idI, idF,tipo) {
 }
 
 function cargarEstadisticas(id){
-	var cargador = new net.CargadorContenidos('http://www.corto.es/Visitas/estadisticas/1',showEst); 
+	var cargador = new net.CargadorContenidos('http://www.corto.es/Visitas/estadisticas/'+ id,showEst); 
 }
 
 function get_random_color() {

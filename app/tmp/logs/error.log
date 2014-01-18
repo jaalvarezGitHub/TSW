@@ -11615,3 +11615,25 @@ Stack Trace:
 #10 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(VisitasController), Object(CakeRequest), Object(CakeResponse))
 #11 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #12 {main}
+2014-01-18 18:22:28 Error: [MissingActionException] Action LinksController::visitas() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'visitas',
+)
+Request URL: /links/visitas/estadisticas/4
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-18 18:22:52 Error: [MissingActionException] Action LinksController::visitas() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'visitas',
+)
+Request URL: /links/visitas/estadisticas/4
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

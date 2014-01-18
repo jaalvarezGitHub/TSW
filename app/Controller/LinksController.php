@@ -52,7 +52,7 @@ class LinksController extends AppController{
 			'fields' => array('Link.url')
 			)
 		);
-		if(!empty($dir)){
+		if(!empty($dir)){ 
 			$fecha = date('Y-m-d');
 			$navegador = get_browser()->browser;
 			$web = $this->request->referer();
