@@ -40,6 +40,13 @@
  */
 	CakePlugin::routes();
 
+
+/**
+	*Cuando se conect al controller de lenguage se recoge el parametro idioma
+	*/
+Router::connect('/:language/:controller/:action/*',  
+                       array(),  
+                       array('language' => '[a-z]{3}'));
 /**
  * Load the CakePHP default routes. Only remove this if you do not want to use
  * the built-in default routes.

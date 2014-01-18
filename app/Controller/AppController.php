@@ -31,16 +31,37 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+$lang='esp';  
+Configure::write('Config.language', $lang);
+
 class AppController extends Controller {
-	public $components = array('DebugKit.Toolbar','Session', 'Auth');
+	public $components = array('DebugKit.Toolbar','Session', 'Auth','Cookie');
 
     function beforeFilter() {
  			$this->Auth->allow('login','add');
-			$this->Auth->authenticate = array('Form' => array('userModel' => 'Usuario')
-);
+			$this->Auth->authenticate = array('Form' => array('userModel' => 'Usuario'));
 		
 			$this->Auth->loginAction = array('controller' => 'usuarios', 'action' => 'login');	
 			$this->Auth->loginRedirect = array('controller' => 'links', 'action' => 'index'); 
 			$this->Auth->logoutRedirect = array('controller' => 'usuarios', 'action' => 'login');	
-	}
+
+			$this-> setLanguage();
+	  }
+   function setLanguage() {  
+  
+      if ($this->Cookie->read('lang') && !$this->Session->check('Config.language')) {  
+          $this->Session->write('Config.language', $this->Cookie->read('lang'));  
+      }  
+      else if (isset($this->params['language']) && ($this->params['language']  
+               !=  $this->Session->read('Config.language'))) {       
+
+          $this->Session->write('Config.language', $this->params['language']);  
+          $this->Cookie->write('lang', $this->params['language'], false, '20 days');  
+      }  
+   }
+
+		function beforeRender() {  
+        $idioma = $this->Cookie->read('lang');  
+        $this->set('idioma',$idioma);  
+    } 
 }

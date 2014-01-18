@@ -11637,3 +11637,13 @@ Stack Trace:
 #1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
 #2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2014-01-18 19:36:27 Error: Fatal Error (1): Call to undefined function php__() in [/var/www/TSW/app/View/Links/index.ctp, line 43]
+2014-01-18 19:36:27 Error: [FatalErrorException] Call to undefined function php__()
+Request URL: /
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/TSW/ap...', 43)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/TSW/ap...', 43, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/TSW/ap...', 43, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}

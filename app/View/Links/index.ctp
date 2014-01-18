@@ -40,7 +40,7 @@
 			
 				<div id="menu">
 					<ul>
-							 <li id="eliminar" class="menu">Eliminar</li>
+							 <li id="eliminar" class="menu"><?php __("Eliminar")?></li>
 							 <HR width=90% align="center" pading="0px">
 							<li id="modoSeguro" class="menu">Recortar</a></li>
 					</ul>
