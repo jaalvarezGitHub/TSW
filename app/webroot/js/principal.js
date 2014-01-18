@@ -171,19 +171,19 @@ window.onload = function() {
 	
 	/*Funcion encargada de mostrar las estadisticas*/
 	document.getElementById("navPag").onmousedown = function (){ 
-			cargarEstadisticas(14);
+			cargarEstadisticas(1);
 			document.getElementById('front').style.display='none';
 			document.getElementById('front_estadisticas').style.display='block';
 			document.getElementById('vista_dia').style.backgroundColor='#CD5C5C';
 			document.getElementById('vista_dia').style.color='#FFF'; 
-			document.getElementById('canvas_mes').style.display='none';
-			document.getElementById("canvas_ano").style.display='none';
-			
-		
+			document.getElementById('vista_mes').style.backgroundColor='#fff';
+			document.getElementById('vista_mes').style.color='#aaa';
+			document.getElementById('vista_ano').style.backgroundColor='#fff';
+			document.getElementById('vista_ano').style.color='#aaa';
+
 	}
 	document.getElementById("vista_dia").onmousedown = function (){ 
 			document.getElementById('front_estadisticas').style.display='block';
-			document.getElementById('canvas_mes').style.display='block';
 			document.getElementById('vista_dia').style.backgroundColor='#CD5C5C';
 			document.getElementById('vista_dia').style.color='#FFF';
 			document.getElementById('vista_mes').style.backgroundColor='#fff';
@@ -191,12 +191,11 @@ window.onload = function() {
 			document.getElementById('vista_ano').style.backgroundColor='#fff';
 			document.getElementById('vista_ano').style.color='#aaa';
 			document.getElementById('canvas_mes').style.display='none';
-			document.getElementById('canvas_ano').style.display='none';			
+			document.getElementById('canvas_ano').style.display='none';	
+			document.getElementById('canvas_dia').style.display='inline';		
 		
 		}
 	document.getElementById("vista_mes").onmousedown = function (){ 
-				cargarEstadisticas(14);
-
 			document.getElementById('front_estadisticas').style.display='block';
 			document.getElementById('vista_mes').style.backgroundColor='#CD5C5C';
 			document.getElementById('vista_mes').style.color='#FFF';
@@ -205,13 +204,12 @@ window.onload = function() {
 			document.getElementById('vista_ano').style.backgroundColor='#fff';
 			document.getElementById('vista_ano').style.color='#aaa';
 			document.getElementById('canvas_mes').style.display='inline';
+			document.getElementById('canvas_dia').style.display='none';	
 			document.getElementById('canvas_ano').style.display='none';			
 		
 		}
 		
 	document.getElementById("vista_ano").onmousedown = function (){ 
-				cargarEstadisticas(14);
-
 			document.getElementById('front_estadisticas').style.display='block';
 			document.getElementById('vista_ano').style.backgroundColor='#CD5C5C';
 			document.getElementById('vista_ano').style.color='#FFF';
@@ -219,6 +217,7 @@ window.onload = function() {
 			document.getElementById('vista_dia').style.color='#aaa';
 			document.getElementById('vista_mes').style.backgroundColor='#fff';
 			document.getElementById('vista_mes').style.color='#aaa';
+			document.getElementById('canvas_dia').style.display='none';
 			document.getElementById('canvas_mes').style.display='none';
 			document.getElementById('canvas_ano').style.display='inline';			
 		

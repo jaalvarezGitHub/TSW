@@ -32,19 +32,19 @@ class VisitasController extends AppController{
 
 		$this->set('navegador', $this->Visita->query( 'SELECT navegador, count(*) as num_visitas
 																									 FROM visitas
-																									 WHERE urlMini = "'.$id.'" 
+																									 WHERE urlMini = "'.$id.'" AND navegador IS NOT NULL 
 																									 GROUP BY navegador'
 																									)
 							);
 		$this->set('web', $this->Visita->query( 'SELECT web, count(*) as num_visitas
 																									 FROM visitas
-																									 WHERE urlMini = "'.$id.'" 
+																									 WHERE urlMini = "'.$id.'" AND web IS NOT NULL
 																									 GROUP BY web'
 																									)
 							);
 		$this->set('pais', $this->Visita->query( 'SELECT pais, count(*) as num_visitas
 																									 FROM visitas
-																									 WHERE urlMini = "'.$id.'" 
+																									 WHERE urlMini = "'.$id.'" AND pais IS NOT NULL
 																									 GROUP BY pais'
 																									)
 							);

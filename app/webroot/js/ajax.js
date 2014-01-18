@@ -135,6 +135,34 @@ function showEst(){
 			var ctx = document.getElementById("canvas_mes").getContext("2d");
 			var myNewChart = new Chart(ctx).Bar(data);
 
+/**********************canvas_dia*/
+  canvas = document.createElement("canvas");
+	canvas.setAttribute("id","canvas_dia");
+	canvas.setAttribute("width","600");
+	canvas.setAttribute("height","300");
+	canvas.style.position ="absolute";
+	divEst.appendChild(canvas); 
+	a = new Array();
+	visitas = new Array();
+
+	for(var i in request.dia){
+			a[i]=request.dia[i]['visitas'].fecha;
+			visitas[i]= request.dia[i][0].num_visitas; 
+
+	}
+	data = {
+	labels : a,
+	datasets : [
+		{
+			fillColor : "rgba(220,220,220,0.5)",
+			strokeColor : "rgba(220,220,220,1)",
+			data : visitas
+		}
+	]
+}
+			ctx = document.getElementById("canvas_dia").getContext("2d");
+			myNewChart = new Chart(ctx).Bar(data);
+
 /**********************canvas_ano*/
 
 	canvas = document.createElement("canvas");
@@ -211,11 +239,14 @@ function showEst(){
 	a = new Array();
 
 	for(var i in request.navegador){ 
-		a.push({ value: parseInt(request.navegador[i][0].num_visitas), color : get_random_color(),label : 'eessoo'});
+		a.push({ value: parseInt(request.navegador[i][0].num_visitas), color : get_random_color(),  label : 'Sleep',labelColor : 'white', labelFontSize : '16'});
 	}
 
 	ctx = document.getElementById("canvas_navegador").getContext("2d");
 	myNewChart = new Chart(ctx).Doughnut(a);
+
+	document.getElementById('canvas_mes').style.display='none';
+	document.getElementById("canvas_ano").style.display='none';
 
 }
 
