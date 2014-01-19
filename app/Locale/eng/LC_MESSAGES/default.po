@@ -1,0 +1,143 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2014-01-19 16:30+0100\n"
+"PO-Revision-Date: 2014-01-19 16:47+0100\n"
+"Last-Translator: user\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n !=1;\n"
+
+#: Layouts/default2.ctp:22
+msgid "Ayuda"
+msgstr "Help"
+
+#: Layouts/default2.ctp:24
+msgid "Mi cuenta"
+msgstr "My account"
+
+#: Layouts/default2.ctp:26
+msgid "Datos personales"
+msgstr "Personal data"
+
+#: Layouts/default2.ctp:30
+msgid "Idiomas"
+msgstr "Languages"
+
+#: Layouts/default2.ctp:43
+msgid "Vista día"
+msgstr "Day view"
+
+#: Layouts/default2.ctp:46
+msgid "Vista mes"
+msgstr "Month view"
+
+#: Layouts/default2.ctp:49
+msgid "Vista año"
+msgstr "Year view"
+
+#: Links/enrutar.ctp:2
+msgid "enlaceEnrutarNotFound"
+msgstr "There is any page with that ID"
+
+#: Links/index.ctp:19
+msgid "Titulo"
+msgstr "Title"
+
+#: Links/index.ctp:21
+msgid "Descripción"
+msgstr "Description"
+
+#: Links/index.ctp:27
+msgid "Guardar"
+msgstr "Save"
+
+#: Links/index.ctp:28
+msgid "Recortar"
+msgstr "Shorten"
+
+#: Links/index.ctp:34
+msgid "Mis Urls"
+msgstr "My Url's"
+
+#: Links/index.ctp:43
+msgid "Eliminar"
+msgstr "Delete"
+
+#: Links/index.ctp:45
+msgid "RecortarMenuUrl"
+msgstr "Shorten "
+
+#: Links/index.ctp:63
+msgid "Todas"
+msgstr "All"
+
+#: Links/index.ctp:69
+msgid "página"
+msgstr "page"
+
+#: Links/index.ctp:69;114
+msgid "de"
+msgstr "of"
+
+#: Links/index.ctp:79
+msgid "Mini Urls"
+msgstr "Mini Url's"
+
+#: Links/index.ctp:82
+msgid "Visitas"
+msgstr "Visits"
+
+#: Links/index.ctp:88
+msgid "EliminarMenuDer"
+msgstr "Delete"
+
+#: Links/index.ctp:89
+msgid "EstadisticasMenuDer"
+msgstr "Statistics"
+
+#: Links/index.ctp:108
+msgid "todas"
+msgstr "all"
+
+#: Links/index.ctp:114
+msgid "pagina"
+msgstr "page"
+
+#: Usuarios/add.ctp:3
+#: Usuarios/editar.ctp:3
+msgid "UserFirstName"
+msgstr "First Name"
+
+#: Usuarios/add.ctp:4
+#: Usuarios/editar.ctp:4
+msgid "UserSecondName"
+msgstr "Second Name"
+
+#: Usuarios/add.ctp:5
+#: Usuarios/editar.ctp:5
+#: Usuarios/login.ctp:4
+msgid "UserName"
+msgstr "Username"
+
+#: Usuarios/add.ctp:6
+#: Usuarios/editar.ctp:6
+#: Usuarios/login.ctp:5
+msgid "UserPassword"
+msgstr "Password"
+
+#: Usuarios/add.ctp:7
+#: Usuarios/editar.ctp:7
+msgid "UserMail"
+msgstr "Mail"
+
+#: Usuarios/add.ctp:8
+#: Usuarios/editar.ctp:8
+msgid "SaveUserData"
+msgstr "Save"
+
