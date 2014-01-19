@@ -5,8 +5,8 @@ class UrlsController extends AppController{
 			$datos = array(
 				'Url' => array(
 					'url' => $this->request->data('url'),
-					'titulo' => '',
-					'descripcion' => '',
+					'titulo' => $this->request->data('titulo_url'),
+					'descripcion' => $this->request->data('descripcion_url'),
 					'usuario' => $this->Auth->user('id')					
 					)
 			);

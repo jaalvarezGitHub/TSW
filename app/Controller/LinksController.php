@@ -56,8 +56,7 @@ class LinksController extends AppController{
 			$navegador = get_browser()->browser;
 			$web = $this->request->referer();
 			$ip = $this->request->clientIp();
-			$pais = $this->obtenerPais->getPais($ip);
-			
+			$pais = $this->obtenerPais->getPais($ip);			
 			$data = array(
 				'Visita' => array(
 					'urlMini' => $this->params->num,
