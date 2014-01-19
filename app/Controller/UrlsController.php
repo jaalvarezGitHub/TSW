@@ -7,7 +7,7 @@ class UrlsController extends AppController{
 					'url' => $this->request->data('url'),
 					'titulo' => '',
 					'descripcion' => '',
-					'usuario' => $this->Auth->user('id_usuario')					
+					'usuario' => $this->Auth->user('id')					
 					)
 			);
 			$this->Url->create($datos);

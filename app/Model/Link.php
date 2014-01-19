@@ -1,16 +1,13 @@
 <?php 
 class Link extends AppModel{
-##	public $hasOne = array(
-##		'Usuario' => array(
-##			'className' => 'Usuario',
-##			'foreignKey' => 'id_usuario'	
-##		)
-##	);
-##	public $hasMany = array(
-##		'Visita' => array(
-##			'className' => 'Visita',
-##			'foreignKey' => 'urlMini'	
-##		)
-##	); 
+	public $validate = array(
+		'url' => array(
+			'validateFormat' => array(
+				'rule' => '/(http|https):\/\/www\.([A-Za-z0-9.-]+\.)+[a-z]+/',
+				'message' => 'Formato incorrecto',
+				'required' => true				
+			) 
+		)
+	);
 }
 ?>

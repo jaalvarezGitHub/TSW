@@ -7,7 +7,7 @@
 				<div class="title" id="title1">
 			    <div class="left">
 						<span id="logo">Url</span>
-						<input type="text" id="LinkUrl" name="url"></input>
+						<input type="text" id="LinkUrl" name="url" placeholder="http://www.corto.es"></input>
 					</div>
 			    <div class="right">
 		        <a href="" id="ex1" onclick="expand(this); return false;" class="aexpand">+</a>
@@ -94,7 +94,7 @@
 
 				<?php  
 					foreach($links as $link){ 
-						echo '<li><a id="'.$link['L']['id'].'" href="http://'.$dominio.'/'.$link['L']['id'].'" class="url_div_izq">corto.es/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
+						echo '<li><a id="'.$link['L']['id'].'" href="'.$link['L']['id'].'" class="url_div_izq">corto.es/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
 				?>	
 			</ul>  
 		</div> <!--cierre div_lista_url_der -->

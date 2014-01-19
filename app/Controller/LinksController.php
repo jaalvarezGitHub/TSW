@@ -30,18 +30,18 @@ class LinksController extends AppController{
 
 	}
 	function recortar(){
-		if ($this->request->is('post')) {
+		if ($this->request->is('post')) { 
 			$datos = array(
 				'Link' => array(
 					'url' => $this->request->data('url'),
-					'titulo' => '',
-					'descripcion' => '',
-					'usuario' => $this->Auth->user('id_usuario')					
+					'titulo' => $this->request->data('titulo_url'),
+					'descripcion' => $this->request->data('descripcion_url'),
+					'usuario' => $this->Auth->user('id')					
 					)
 			);
 			$this->Link->create($datos);
 			if(!$this->Link->save($datos))
-					$this->Session->setFlash('Error al calcular url');	//cambiar por flash propio
+					$this->Session->setFlash('Error al recortar url, comprueba que el formato de la url es correcto');	
 		}
 		return $this->redirect(array('controller' => 'links', 'action' => 'index'));
 	}
@@ -49,8 +49,8 @@ class LinksController extends AppController{
 		$dir = $this->Link->find('first', array(
 			'conditions' => array('Link.id' => $this->params->num),
 			'fields' => array('Link.url')
-			)
-		);
+			)    
+		); 
 		if(!empty($dir)){ 
 			$fecha = date('Y-m-d');
 			$navegador = get_browser()->browser;
@@ -70,7 +70,7 @@ class LinksController extends AppController{
 			$this->Visita->create($data);
 			$this->Visita->save($data);
 			
-			return $this->redirect('http://'.$dir['Link']['url']);
+			return $this->redirect($dir['Link']['url']);
 		}
 	}
 
