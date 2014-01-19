@@ -94,7 +94,7 @@
 
 				<?php  
 					foreach($links as $link){ 
-						echo '<li><a id="'.$link['L']['id'].'" href="'.$link['L']['id'].'" class="url_div_izq">corto.es/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
+						echo '<li><a id="'.$link['L']['id'].'" href="'.$link['L']['id'].'" class="url_div_izq">'.$dominio.'/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
 				?>	
 			</ul>  
 		</div> <!--cierre div_lista_url_der -->
@@ -103,7 +103,7 @@
 			<li class="li_num_paginas">
 				<select id="select_num_mini">
 				  <option selected value="10" >10</option>
-				  <option value="5">15</option>
+				  <option value="15">15</option>
 				  <option value="20">20</option>
 				  <option value="1"><?php echo __('todas');?></option>
 				</select>
@@ -111,7 +111,7 @@
 			<li class="li_desplazar">
 				<img id="boton_primera_pag_mini" src="/img/primera_pagina.png"></img>
 				<img id="boton_pag_anterior_mini" src="/img/pagina_anterior.png"></img>
-			 <?php echo __('pagina');?> <span id="pag_actual_mini">1</span><?php echo __('de');?><span id="ultima_pag_mini">
+			 <?php echo __('pagina');?> <span id="pag_actual_mini">1</span><?php echo __(' de');?><span id="ultima_pag_mini">
 				<?php echo ceil($numMiniUrls/10)?></span>
 				<img id="boton_pag_siguiente_mini" src="/img/pagina_siguiente.png"></img>
 				<img id="boton_ultima_pag_mini" src="/img/ultima_pagina.png"></img>

@@ -89,15 +89,16 @@ function muestraContenidoMini() {
 	var new_ul = document.createElement("ul");
 	new_ul.setAttribute("id","ul_links_der");
 	lista_izq.appendChild(new_ul);
-	var request = JSON.parse(this.req.responseText);
+	var request = JSON.parse(this.req.responseText); 
 	for(var i in request){
 		var new_li = document.createElement("li");
 		new_ul.appendChild(new_li);
 		var new_link = document.createElement("a");
 		new_link.setAttribute("class","url_div_izq");
 		new_link.setAttribute("id",request[i].Link.id);
-		new_li.appendChild(new_link);
-		new_link.appendChild(document.createTextNode(request[i].Link.urlMini));
+		new_link.setAttribute("href",request[i].Link.id);
+		new_li.appendChild(new_link); 
+		new_link.appendChild(document.createTextNode(document.domain+"/"+request[i].Link.id));
 	}
 	
 }
@@ -256,9 +257,9 @@ function showEst(){
 function cargaContenidosUrls(idI, idF,tipo) {
  
   if(tipo == 'url'){
- 	 var cargador = new net.CargadorContenidos('http://www.corto.es/Urls/recuperar?idI='+idI+'&idF='+idF, muestraContenido);
+ 	 var cargador = new net.CargadorContenidos('/urls/recuperar?idI='+idI+'&idF='+idF, muestraContenido);
   }else
-	 var cargador = new net.CargadorContenidos('http://www.corto.es/Links/recuperar?idI='+idI+'&idF='+idF, muestraContenidoMini);
+	 var cargador = new net.CargadorContenidos('/links/recuperar?idI='+idI+'&idF='+idF, muestraContenidoMini);
   //return false;
 }
 

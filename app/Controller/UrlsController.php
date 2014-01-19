@@ -12,7 +12,7 @@ class UrlsController extends AppController{
 			);
 			$this->Url->create($datos);
 			if (!$this->Url->save($datos)){
-				$this->Session->setFlash('Error al guardar URL');	//cambiar por flash propio
+				$this->Session->setFlash('Error al guardar URL, por favor revise el formato de la url introducida');	//cambiar por flash propio
 			 }
 		}
 		return $this->redirect(array('controller' => 'links', 'action' => 'index'));
