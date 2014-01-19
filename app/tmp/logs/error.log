@@ -11647,3 +11647,228 @@ Stack Trace:
 #3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
 #4 [internal function]: App::shutdown()
 #5 {main}
+2014-01-19 12:46:06 Error: [MissingControllerException] Controller class LanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'LanguageController',
+  'plugin' => NULL,
+)
+Request URL: /language/esp
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 13:38:07 Error: [MissingControllerException] Controller class LanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'LanguageController',
+  'plugin' => NULL,
+)
+Request URL: /language/eng
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 14:22:53 Error: [MissingControllerException] Controller class LanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'LanguageController',
+  'plugin' => NULL,
+)
+Request URL: /language/eng
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 14:28:59 Error: [MissingControllerException] Controller class LanguageController could not be found.
+Exception Attributes: array (
+  'class' => 'LanguageController',
+  'plugin' => NULL,
+)
+Request URL: /language/eng
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 15:49:32 Error: Fatal Error (4): syntax error, unexpected ';' in [/var/www/TSW/app/View/Usuarios/add.ctp, line 3]
+2014-01-19 15:49:32 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /usuarios/add
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/TSW/ap...', 3)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/TSW/ap...', 3, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/TSW/ap...', 3, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 15:57:41 Error: [MissingActionException] Action UsuariosController::edit() could not be found.
+Exception Attributes: array (
+  'controller' => 'UsuariosController',
+  'action' => 'edit',
+)
+Request URL: /usuarios/edit
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(UsuariosController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-19 16:01:25 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/TSW/app/View/Usuarios/login.ctp, line 4]
+2014-01-19 16:01:25 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /usuarios/login
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/TSW/ap...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/TSW/ap...', 4, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/TSW/ap...', 4, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 16:01:50 Error: Fatal Error (4): syntax error, unexpected T_ARRAY in [/var/www/TSW/app/View/Usuarios/login.ctp, line 4]
+2014-01-19 16:01:50 Error: [FatalErrorException] syntax error, unexpected T_ARRAY
+Request URL: /usuarios/login
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/TSW/ap...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/TSW/ap...', 4, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/TSW/ap...', 4, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 16:22:42 Error: Fatal Error (1): Call to undefined function berforeFilter() in [/var/www/TSW/app/Controller/LinksController.php, line 82]
+2014-01-19 16:22:42 Error: [FatalErrorException] Call to undefined function berforeFilter()
+Request URL: /
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 16:23:41 Error: Fatal Error (1): Call to undefined function beforeFilter() in [/var/www/TSW/app/Controller/LinksController.php, line 82]
+2014-01-19 16:23:41 Error: [FatalErrorException] Call to undefined function beforeFilter()
+Request URL: /
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 16:23:42 Error: Fatal Error (1): Call to undefined function beforeFilter() in [/var/www/TSW/app/Controller/LinksController.php, line 82]
+2014-01-19 16:23:42 Error: [FatalErrorException] Call to undefined function beforeFilter()
+Request URL: /
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/TSW/ap...', 82, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 16:38:08 Error: Fatal Error (4): syntax error, unexpected '<' in [/var/www/TSW/app/View/Links/enrutar.ctp, line 2]
+2014-01-19 16:38:08 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /5
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/TSW/ap...', 2)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/TSW/ap...', 2, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/TSW/ap...', 2, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 17:09:53 Error: [MissingControllerException] Controller class EspController could not be found.
+Exception Attributes: array (
+  'class' => 'EspController',
+  'plugin' => NULL,
+)
+Request URL: /esp
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 17:09:56 Error: [MissingControllerException] Controller class EspController could not be found.
+Exception Attributes: array (
+  'class' => 'EspController',
+  'plugin' => NULL,
+)
+Request URL: /esp/
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 17:10:36 Error: [MissingControllerException] Controller class EspController could not be found.
+Exception Attributes: array (
+  'class' => 'EspController',
+  'plugin' => NULL,
+)
+Request URL: /esp/
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 17:42:06 Error: Fatal Error (4): syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in [/var/www/TSW/app/View/Layouts/default2.ctp, line 33]
+2014-01-19 17:42:06 Error: [FatalErrorException] syntax error, unexpected T_CONSTANT_ENCAPSED_STRING
+Request URL: /
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Error/ErrorHandler.php(205): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/TSW/ap...', 33)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/TSW/ap...', 33, Array)
+#2 /var/www/TSW/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/TSW/ap...', 33, Array)
+#3 /var/www/TSW/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-01-19 18:36:40 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/icon_spa.png
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 18:37:19 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/icon_spa.png
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 18:38:58 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/icon_spa.png
+Stack Trace:
+#0 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-01-19 18:51:17 Error: [MissingActionException] Action LinksController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'logout',
+)
+Request URL: /Links/logout/controler:usuarios
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-19 18:52:57 Error: [MissingActionException] Action LinksController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'logout',
+)
+Request URL: /Links/logout/controler:usuarios
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-19 18:53:09 Error: [MissingActionException] Action LinksController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'logout',
+)
+Request URL: /Links/logout/controler:usuarios
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-01-19 18:53:34 Error: [MissingActionException] Action LinksController::logout() could not be found.
+Exception Attributes: array (
+  'controller' => 'LinksController',
+  'action' => 'logout',
+)
+Request URL: /Links/logout/controler:usuarios
+Stack Trace:
+#0 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(187): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/TSW/lib/Cake/Routing/Dispatcher.php(162): Dispatcher->_invoke(Object(LinksController), Object(CakeRequest), Object(CakeResponse))
+#2 /var/www/TSW/app/webroot/index.php(110): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

@@ -3,7 +3,7 @@
 function DropDown(el) {
     this.dd = el;
     this.placeholder = this.dd.children('span');
-    this.opts = this.dd.find('ul.dropdown > li');
+    this.opts = this.dd.find('ul.dropdown > li > a');
     this.val = '';
     this.index = -1;
     this.initEvents();
@@ -16,12 +16,10 @@ DropDown.prototype = {
             $(this).toggleClass('active');
             return false;
         });
- 
-        obj.opts.on('click',function(){
-            var opt = $(this);
-            obj.val = opt.text();
-            obj.index = opt.index();
-            obj.placeholder.text(obj.val);
+ 				
+        obj.opts.on('click',function(event){
+					event.stopPropagation();
+            
         });
     },
     getValue : function() {

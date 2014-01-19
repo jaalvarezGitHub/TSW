@@ -71,20 +71,22 @@
 }
 .nav_item .dropdown li a {
     display: block;
+		width:100%;
     padding: 10px;
+
     text-decoration: none;
     color: #8aa8bd;
     border-bottom: 1px solid #e6e8ea;
     box-shadow: inset 0 1px 0 rgba(255,255,255,1);
     transition: all 0.3s ease-out;
+		box-sizing: border-box;
 }
-.nav_item .dropdown li img {
-    float: right;
-}
-.icon_spa{
-	background-image:url("/img/icon_spa.gif");
+
+.icon_language{
+	float:right;
 	width:20px;
 	height:20px;
+	margin:0px;
 }
  
 .nav_item .dropdown li:first-of-type a {

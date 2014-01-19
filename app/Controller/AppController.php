@@ -36,6 +36,7 @@ Configure::write('Config.language', $lang);
 
 class AppController extends Controller {
 	public $components = array('DebugKit.Toolbar','Session', 'Auth','Cookie');
+	public $helpers= array('Html','Form');
 
     function beforeFilter() {
  			$this->Auth->allow('login','add');
@@ -61,7 +62,7 @@ class AppController extends Controller {
    }
 
 		function beforeRender() {  
-        $idioma = $this->Cookie->read('lang');  
+        $idioma = $this->Session->read('Config.language'); 
         $this->set('idioma',$idioma);  
     } 
 }

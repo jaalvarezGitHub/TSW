@@ -18,20 +18,43 @@
 	<body>
 		<div id="pagina" > 
 			<ul id="nav">
-				<li  class="nav_item" tabindex="1"><a href="#">Corto</a> </li>
-				<li  class="nav_item " tabindex="1"><a href="#">Mi cuenta</a> </li>
+				<li  class="nav_item" tabindex="1">
+					<?php echo $this->Html->link('Corto', array('controller' => 'links','action' => 'index'));?>
+			  </li>
+				<li  class="nav_item " tabindex="1">
+					<a href=""> <?php echo __('Ayuda');?></a>
+			  </li>
 				<li  class="nav_item nav_item_list " tabindex="1">
-					<a href="#">Paginas</a>
-					<ul class="dropdown">	
-						<li id="navPag" ><a  href="http://corto.res/links/estadisticas">Estadisticas</a></li>			
+					<a ><?php echo __('Mi cuenta');?></a>
+					<ul class="dropdown">		
+						<li>
+							<?php echo $this->Html->link( __('Datos personales'), 
+								array('controller' => 'usuarios','action' => 'configuracion')); ?>
+						</li>		
+						<li>
+							<?php echo $this->Html->link( __('Cerrar sesión'), 
+								array('controller' => 'usuarios','action' => 'logout')); ?>
+						</li>		
 					</ul>
 				</li>
-				<li id="" class="nav_item nav_item_list" tabindex="1">
-					<a href="#">Idiomas</a>
+				<li class="nav_item nav_item_list" tabindex="1">
+					<a><?php echo __('Idiomas');?></a>
 					<ul class="dropdown">
-						<li><a href="#"><img class="icon_spa"></img>Opcione 1</a></li>
-						<li><a href="#"><i class=""></i>Opcion 2</a></li>
-						<li><a href="#"><i class=""></i>Opcion 3</a></li>
+						 <li>
+								<?php	echo $this->Html->link(
+									$this->Html->image('/img/icon_esp.png', array('class'=>'icon_language')) . ' ' . 'Español',
+                  array('language'=>'esp'),
+                  array('escape' => false));
+							  ?>		
+						 </li>
+ 						 <li>
+								<?php	echo $this->Html->link(
+									$this->Html->image('/img/icon_eng.png', array('class'=>'icon_language')) . ' ' . 'English',
+                       array('language'=>'eng'),
+                       array('escape' => false));
+								 ?>	
+						 </li>	
+		
 					</ul>
 				</li>
 			</ul>
@@ -40,13 +63,13 @@
 					<div id ="estadisticas_tiempo">
 						<ul id ="barra_seleccion_vista">
 							<li id="vista_dia">
-								<span>Vista día</span>								
+								<span><?php echo __('Vista día');?></span>								
 							</li>			
 							<li id="vista_mes">
-								<span>Vista mes</span>								
+								<span><?php echo __('Vista mes');?></span>								
 							</li>		
 							<li id="vista_ano">
-								<span>Vista año</span>								
+								<span><?php echo __('Vista año');?></span>								
 							</li>				
 						</ul>
 						<div id ="canvas_estadisticas"></div>

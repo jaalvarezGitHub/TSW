@@ -16,22 +16,22 @@
 				  <div class="clear"></div>
 				 </div>
 				 <div class="data" id="data1">
-					<label for="titulo_url">Titulo</label>
+					<label for="titulo_url"><?php echo __('Titulo')?></label>
 					<input type="text" name="titulo_url" id="titulo_url"></input>
-					<label for="descripcion_url">Descripcion</label>
+					<label for="descripcion_url"><?php echo __('Descripción');?></label>
 					<textarea rows="4" cols="50" name="descripcion_url" id="titulo_url"></textarea>
 				</div>
 			</div>
 		</div> <!--container-->
 		<ul id="botonesGRB">
-			<li><a href="javascript:enviarFormulario('/Urls/guardar');">Guardar</a></li>
-			<li><a href="javascript:enviarFormulario('/links/recortar')">Recortar</a></li>				
+			<li><a href="javascript:enviarFormulario('/Urls/guardar');"><?php echo __('Guardar');?></a></li>
+			<li><a href="javascript:enviarFormulario('/links/recortar')"><?php echo __('Recortar');?></a></li>				
 		</ul>
 	</form> 
 </div> <!--cierre div buscador-->
 <div id="div_izq">
 	<div id="encabezado_div">
-		<div id="titulo_div">Mis URL's</div>
+		<div id="titulo_div"><?php echo __('Mis Urls');?></div>
 	</div>
 	<div id="contenido_paneles"> 
 		<div class="scroll scroll_superior" id ="scroll_superior_izq" ></div>
@@ -40,9 +40,9 @@
 			
 				<div id="menu">
 					<ul>
-							 <li id="eliminar" class="menu"><?php __("Eliminar")?></li>
+							 <li id="eliminar" class="menu"><?php echo __('Eliminar');?></li>
 							 <HR width=90% align="center" pading="0px">
-							<li id="modoSeguro" class="menu">Recortar</a></li>
+							<li id="modoSeguro" class="menu"><?php echo __('RecortarMenuUrl');?></a></li>
 					</ul>
 				</div>
 
@@ -60,13 +60,13 @@
 				  <option selected value="10">10</option>
 				  <option value="15">15</option>
 				  <option value="20">20</option>
-				  <option value="1">todas</option>
+				  <option value="1"><?php echo __('Todas');?></option>
 				</select>
 			</li>
 			<li class="li_desplazar">
 				<img id="boton_primera_pag_url" src="/img/primera_pagina.png"></img>
 				<img id="boton_pag_anterior_url" src="/img/pagina_anterior.png"></img>
-				 pagina <span id="pag_actual_url">1</span> de <span id="ultima_pag_url">
+				 <?php echo __('página');?> <span id="pag_actual_url">1</span> <?php echo __('de');?> <span id="ultima_pag_url">
 					<?php echo ceil($numUrls/10)?></span>
 				<img id="boton_pag_siguiente_url" src="/img/pagina_siguiente.png"></img>
 				<img id="boton_ultima_pag_url" src="/img/ultima_pagina.png"></img>
@@ -76,17 +76,17 @@
 	</div> <!--cierre contenido_paneles -->
 </div> <!--cierre div_izq -->
 <div id="div_der"> 
-	<div id="titulo_div">Mini URL's</div>
+	<div id="titulo_div"><?php echo __('Mini Urls');?></div>
 	<div id="contenido_paneles"> 
 		<div class="scroll scroll_superior" id ="scroll_superior_der"></div>
-		<span id="icono_visitas">visitas</span>
+		<span id="icono_visitas"><?php echo __('Visitas');?></span>
 		<div class="div_lista_url" id="div_lista_url_der">
 			<ul id="ul_links_der">
 
 				<div id="menu_der">
 					<ul>
-						 <li id="eliminar" class="menu">Eliminar</li>
-						 <li id="estadisticas_btn">Estadísticas</li>
+						 <li id="eliminar" class="menu"><?php echo __('EliminarMenuDer');?></li>
+						 <li id="estadisticas_btn"><?php echo __('EstadisticasMenuDer');?></li>
 						 <HR width=90% align="center" pading="0px">
 					</ul>
 				</div>
@@ -105,13 +105,13 @@
 				  <option selected value="10" >10</option>
 				  <option value="5">15</option>
 				  <option value="20">20</option>
-				  <option value="1">todas</option>
+				  <option value="1"><?php echo __('todas');?></option>
 				</select>
 			</li>
 			<li class="li_desplazar">
 				<img id="boton_primera_pag_mini" src="/img/primera_pagina.png"></img>
 				<img id="boton_pag_anterior_mini" src="/img/pagina_anterior.png"></img>
-			  pagina <span id="pag_actual_mini">1</span> de <span id="ultima_pag_mini">
+			 <?php echo __('pagina');?> <span id="pag_actual_mini">1</span><?php echo __('de');?><span id="ultima_pag_mini">
 				<?php echo ceil($numMiniUrls/10)?></span>
 				<img id="boton_pag_siguiente_mini" src="/img/pagina_siguiente.png"></img>
 				<img id="boton_ultima_pag_mini" src="/img/ultima_pagina.png"></img>

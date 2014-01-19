@@ -1,6 +1,5 @@
 <?php
 class LinksController extends AppController{
-	public $helpers= array('Html','Form');
 	public $uses = array('Link','Url','Visita');
 	public $components = array('obtenerPais');
 
@@ -79,7 +78,5 @@ class LinksController extends AppController{
 		$this->Link->delete($id);
 		return $this->redirect(array('controller' => 'links', 'action' => 'index'));
 	}
-
-
 }
 ?>
