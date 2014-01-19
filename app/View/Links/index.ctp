@@ -81,8 +81,6 @@
 		<div class="scroll scroll_superior" id ="scroll_superior_der"></div>
 		<span id="icono_visitas"><?php echo __('Visitas');?></span>
 		<div class="div_lista_url" id="div_lista_url_der">
-			<ul id="ul_links_der">
-
 				<div id="menu_der">
 					<ul>
 						 <li id="eliminar" class="menu"><?php echo __('EliminarMenuDer');?></li>
@@ -90,11 +88,10 @@
 						 <HR width=90% align="center" pading="0px">
 					</ul>
 				</div>
-
-
+				<ul id="ul_links_der">
 				<?php  
 					foreach($links as $link){ 
-						echo '<li><a id="'.$link['L']['id'].'" href="'.$link['L']['id'].'" class="url_div_izq">'.$dominio.'/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
+						echo '<li><a id="'.$link['L']['id'].'" href="/'.$link['L']['id'].'" class="url_div_izq">'.$dominio.'/'.$link ['L']['id'].'</a> <span class="visitas_div_izq">'.$link ['0']['cont'].'</a></li>'; 		 			}
 				?>	
 			</ul>  
 		</div> <!--cierre div_lista_url_der -->
